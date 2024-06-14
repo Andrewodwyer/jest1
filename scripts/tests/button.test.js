@@ -5,8 +5,8 @@
 const buttonClick = require("../button");
 
 beforeAll(() => {
-    let fs = require("fs");
-    let fileContents = fs.readFileSync("index.html", "utf-8");
+    let fs = require("fs"); // file handing in node, used to open read and write files. fs is included in nodes extended library
+    let fileContents = fs.readFileSync("index.html", "utf-8"); // use fs to read a file contents(fs.readFileSyne)
     document.open();
     document.write(fileContents);
     document.close();
